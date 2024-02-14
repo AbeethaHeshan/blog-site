@@ -4,6 +4,7 @@ import Routers from '../routes/Routers'
 import Footer from '../components/footer/Footer'
 
 export default function AppLayout() {
+  
   return (
     <>
       <Header />
