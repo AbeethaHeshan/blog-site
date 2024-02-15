@@ -10,18 +10,15 @@ import TextField from '../components/textField/TextField';
 
 
 
-
-
 export default function ContactUs() {
-  const[email,setEmail] =useState('');
-  const[name,setUserName] =useState('');
 
+  const[email,setEmail] = useState('');
+  const[name,setUserName] = useState('');
 
   const btnOnSubmit = () => {
     console.log("email : "+ email ," ","user-name : "+name);
   }
 
-  
   return (
     <div class="container-fluid vh-100 d-flex flex-column align-items-center">
       <img src={Background} style={{position:'absolute',width:'100%',height:'50%',zIndex:0}}/>
@@ -47,7 +44,7 @@ export default function ContactUs() {
                     <input type="checkbox" class="form-check-input" id="exampleCheck1" />
                     <label class="form-check-label" for="exampleCheck1">Check me out</label>
                  </div>
-                 <Button title={"Submit"} onClick={(event)=>{btnOnSubmit()}}/>
+                 <Button title={"Submit"} onClick={()=>{btnOnSubmit()}}/>
               </form>
             </div>
           </div>

@@ -3,7 +3,7 @@ import blogReducer from './slices/blogSlice';
 
 const store = configureStore({
     reducer: {
-        cart: blogReducer
+        blog: blogReducer
     }
 });
 

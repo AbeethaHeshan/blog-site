@@ -16,7 +16,7 @@ const blogSlice = createSlice({
     reducers: {
 
         addNewBlog(state, action) {
-            state.blogPosts.push(action.payload);
+            state.blogPosts = [...state.blogPosts, action.payload];
         },
 
         updateBlog(state,action){
