@@ -10,14 +10,12 @@ const iconMap = {
     Linkedin: <FaLinkedin />,
   };
 
-
 export default function NavItem({ itemName, activeItem, handleItemClick,icon }) {
     let navigate = useNavigate();
   return (
     <li className={`nav-item ${icon == null ? 'mx-2' : 'mx-1'}`}>
     {
       icon == null ? 
-       
         <a
             className={`nav-link ${activeItem === itemName ? 'active font-weight-bold' : ''}`}
             aria-current="page"

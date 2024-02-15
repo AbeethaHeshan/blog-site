@@ -1,13 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-    blogPosts : [{
-        id:'',
-        title:'',
-        author:'',
-        date:'',
-        content:''
-    }]
+    blogPosts : []
 };
 
 const blogSlice = createSlice({
@@ -26,9 +20,12 @@ const blogSlice = createSlice({
                 state.blogPosts[index] = updatedPost;
             }
         },
-
         removeBlog(state, action) {
-            state.blogPosts = state.blogPosts.filter(post => post.id !== action.payload);
+            const removeId = action.payload;
+            const indexToRemove = state.blogPosts.findIndex(post => post.id === removeId);
+            if (indexToRemove !== -1) {
+                state.blogPosts.splice(indexToRemove, 1);
+            }
         }
     }
 });
