@@ -1,7 +1,35 @@
 import React from 'react'
+import { Col, Card, Button } from 'react-bootstrap';
+import { FaEye, FaEdit, FaTrash } from 'react-icons/fa';
 
-export default function BlogPostCard() {
+export default function BlogPostCard({data,index}) {
   return (
-    <div>BlogPostCard</div>
+    <Col key={index} className="d-flex justify-content-center">
+        <Card style={{ width: '18rem' }}>
+        <div style={{ position: 'relative' }}>
+            <Button variant="danger" style={{ position: 'absolute', top: '0', right: '0', zIndex: '1' }}>
+            <FaTrash />
+            </Button>
+            <Card.Img variant="top" src={data?.image} style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
+        </div>
+        <Card.Body>
+            <Card.Title>{data?.title}</Card.Title>
+            <Card.Text>
+            <div className="d-flex justify-content-between mt-2 mb-5">
+                <span>{data?.author}</span>
+                <span>{data?.date}</span>
+            </div>
+            </Card.Text>
+            <div style={{ position: 'relative' }}>
+            <Button variant="secondary" style={{ position: 'absolute', bottom: '0', left: '0', zIndex: '1' }}>
+                <FaEye />
+            </Button>
+            <Button variant="primary" style={{ position: 'absolute', bottom: '0', right: '0', zIndex: '1' }}>
+                <FaEdit />
+            </Button>
+            </div>
+        </Card.Body>
+        </Card>
+    </Col>
   )
 }
