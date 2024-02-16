@@ -42,17 +42,17 @@ Start the server
 
 ## Screenshots
 Home page
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://raw.githubusercontent.com/AbeethaHeshan/blog-site/main/src/assets/images/readmeAssets/Screenshot%20(172).png?token=GHSAT0AAAAAACLH26ZDQH3DPDUP53OZIQBYZOPEHLQ)
 
 Blog Page
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://raw.githubusercontent.com/AbeethaHeshan/blog-site/main/src/assets/images/readmeAssets/Screenshot%20(169).png?token=GHSAT0AAAAAACLH26ZDAFXGGWBNUZMI44U6ZOPEGWQ)
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://raw.githubusercontent.com/AbeethaHeshan/blog-site/main/src/assets/images/readmeAssets/Screenshot%20(168).png?token=GHSAT0AAAAAACLH26ZDA466QRZ4BIGMSAPYZOPEEZA)
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://raw.githubusercontent.com/AbeethaHeshan/blog-site/main/src/assets/images/readmeAssets/Screenshot%20(169).png?token=GHSAT0AAAAAACLH26ZCGEDUOVY2VKA2IN24ZOPEFYQ)
 
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
 
 Contact-page
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://raw.githubusercontent.com/AbeethaHeshan/blog-site/main/src/assets/images/readmeAssets/Screenshot%20(173).png?token=GHSAT0AAAAAACLH26ZCNA5TJZFADNB3ARQAZOPEGJA)
