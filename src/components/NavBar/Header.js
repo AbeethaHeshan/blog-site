@@ -20,9 +20,9 @@ import NavItem from './NavItem';
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-light custom-box-shadow" style={{backgroundColor:'#4932A2'}}>
     <div className="container-fluid">
-      <a className="navbar-brand" href="/">BlogSite</a>
+      <a className="navbar-brand" style={{color:'white'}}>BlogSite</a>
       <button className="navbar-toggler" type="button" onClick={toggleNavbar}>
         <span className="navbar-toggler-icon"></span>
       </button>

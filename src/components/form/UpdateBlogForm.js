@@ -1,16 +1,15 @@
 import React,{useState,useEffect} from 'react'
-import { Modal, Button ,Form ,Dropdown } from 'react-bootstrap';
+import {Form } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
-import { generateRandomId } from '../../util/randomGenerator';
-import { addNewBlog, updateBlog, removeBlog } from '../../state/slices/blogSlice';
-
+import { updateBlog, } from '../../state/slices/blogSlice';
+import Button from '../button/Button';
 
 export default function UpdateBlogForm({blogDetails}) {
     const { blogPosts} = useSelector((state) => state.blog);
     const[data,setData] = useState(blogDetails);
     const dispatch = useDispatch();
 
-    const addNewBlogPost = () => {
+    const updateBlogPost = () => {
        dispatch(updateBlog(data));
        setData(null);
     };
@@ -63,7 +62,7 @@ export default function UpdateBlogForm({blogDetails}) {
             <Form.Label>Blog Post Banner</Form.Label>
             <Form.Control type="file" multiple name='image' onChange={(e)=>handleChange(e)} />
         </Form.Group>
-        <Button onClick={()=>{addNewBlogPost()}}>Update</Button>
+        <Button  title={"Update"}  onClick={()=>{updateBlogPost()}} />
    </Form>
   )
 }

@@ -1,8 +1,9 @@
 import React,{useState,useEffect} from 'react'
-import { Modal, Button ,Form ,Dropdown } from 'react-bootstrap';
+import { Form } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { generateRandomId } from '../../util/randomGenerator';
-import { addNewBlog, updateBlog, removeBlog } from '../../state/slices/blogSlice';
+import { addNewBlog } from '../../state/slices/blogSlice';
+import Button from '../button/Button';
 
 
 export default function AddBlogForm() {
@@ -72,8 +73,7 @@ export default function AddBlogForm() {
             <Form.Label>Blog Post Banner</Form.Label>
             <Form.Control type="file" multiple name='image' onChange={(e)=>handleChange(e)} />
         </Form.Group>
-
-        <Button onClick={()=>{addNewBlogPost()}}>Save</Button>
+        <Button  onClick={()=>{addNewBlogPost()}} title={"Add Post"}/>
    </Form>
   )
 }

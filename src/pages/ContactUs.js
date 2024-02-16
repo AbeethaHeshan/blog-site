@@ -36,14 +36,10 @@ export default function ContactUs() {
      
       <div className='container border-3 d-flex justify-content-start flex-column'> 
           <h3 className='mt-5' style={{zIndex:10}}>Send us Email</h3>
-          <div className='card p-4 shadow-lg bg-body rounded'>
+          <div className='card p-4 shadow-lg bg-body ' style={{borderRadius:'15px'}}>
               <form>
                 <TextField label={"Email address"} type={"email"} value={email} onChange={(e)=>{setEmail(e?.target?.value)}}/>
                 <TextField label={"Name"} type={"text"} value={name} onChange={(e)=>{setUserName(e?.target?.value)}}/>
-                 <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                 </div>
                  <Button title={"Submit"} onClick={()=>{btnOnSubmit()}}/>
               </form>
             </div>

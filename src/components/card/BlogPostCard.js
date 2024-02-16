@@ -39,7 +39,7 @@ export default function BlogPostCard({data,index,onView}) {
             <Button variant="secondary" style={{ position: 'absolute', bottom: '0', left: '0', zIndex: '1' }} onClick={onView}>
                 <FaEye />
             </Button>
-            <Button variant="primary" style={{ position: 'absolute', bottom: '0', right: '0', zIndex: '1' }} onClick={()=>{setModel(true)}}>
+            <Button style={{ position: 'absolute', bottom: '0', right: '0', zIndex: '1' ,backgroundColor:'#4932A2'}} onClick={()=>{setModel(true)}}>
                 <FaEdit />
             </Button>
             </div>

@@ -14,25 +14,24 @@ export default function NavItem({ itemName, activeItem, handleItemClick,icon }) 
     let navigate = useNavigate();
   return (
     <li className={`nav-item ${icon == null ? 'mx-2' : 'mx-1'}`}>
-    {
-      icon == null ? 
+    {icon == null ?
         <a
-            className={`nav-link ${activeItem === itemName ? 'active font-weight-bold' : ''}`}
+            className={`nav-link ${activeItem === itemName ? 'active font-weight-bold text-black' : 'text-white'}`}
             aria-current="page"
-            onClick={(event) => {handleItemClick(event,itemName);navigate("/"+itemName.toLowerCase()) }}
-         >
+            onClick={(event) => { handleItemClick(event, itemName); navigate("/" + itemName.toLowerCase()) }}
+        >
             {itemName}
-          </a>
-        : 
+        </a>
+        :
         <a
-            className={`nav-link ${activeItem === icon ? 'active font-weight-bold' : ''}`}
+            className={`nav-link ${activeItem === icon ? 'active font-weight-bold text-light-purple' : 'text-white'}`}
             aria-current="page"
             href={`/${icon}`}
             onClick={(event) => handleItemClick(event, icon)}
-         >
-            {icon && iconMap[icon]} 
-          </a>
+        >
+            {icon && iconMap[icon]}
+        </a>
     }
-     </li>
+</li>
   )
 }
