@@ -25,7 +25,8 @@ function Blog() {
   };
 
   return (
-    <div>
+    <div style={{ height: '95vh'}}>
+    
       {/* <img src={Background} style={{position:'absolute',width:'100%',height:'50%',zIndex:-5}}/> */}
       <div class="d-grid gap-2 d-md-flex justify-content-md-end">
          <button class="btn btn-primary me-md-2 m-2" type="button" onClick={() => setLgShow(true)}> Add New </button>
@@ -45,7 +46,7 @@ function Blog() {
         {
           isNavigate && navigate('/blogView',{ state: { blogDetails: selectedBlogPost } }) 
         } 
-    </div>
+     </div>
   )
 }
 
