@@ -40,7 +40,7 @@ export default function ContactUs() {
               <form>
                 <TextField label={"Email address"} type={"email"} value={email} onChange={(e)=>{setEmail(e?.target?.value)}}/>
                 <TextField label={"Name"} type={"text"} value={name} onChange={(e)=>{setUserName(e?.target?.value)}}/>
-                 <Button title={"Submit"} onClick={()=>{btnOnSubmit()}}/>
+                 <Button title={"Send"} onClick={()=>{btnOnSubmit()}}/>
               </form>
             </div>
           </div>
