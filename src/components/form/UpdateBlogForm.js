@@ -44,7 +44,7 @@ export default function UpdateBlogForm({blogDetails}) {
     <Form>
         <Form.Group className="mb-3" >
             <Form.Label>Title</Form.Label>
-            <Form.Control name="title" type="text" placeholder="name@example.com" value={data?.title !== undefined ? data?.title : blogDetails?.title}  onChange={(e)=>handleChange(e)} />
+            <Form.Control name="title" type="text" placeholder="title" value={data?.title !== undefined ? data?.title : blogDetails?.title}  onChange={(e)=>handleChange(e)} />
         </Form.Group>
         <Form.Group className="mb-3" >
             <Form.Label>Content</Form.Label>

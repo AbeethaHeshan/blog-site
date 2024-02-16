@@ -51,7 +51,7 @@ export default function AddBlogForm() {
     <Form>
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
             <Form.Label>Title</Form.Label>
-            <Form.Control name="title" type="text" placeholder="name@example.com"  onChange={(e)=>handleChange(e)} required/>
+            <Form.Control name="title" type="text" placeholder="title"  onChange={(e)=>handleChange(e)} required/>
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
