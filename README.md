@@ -41,20 +41,16 @@ Start the server
 ## Screenshots
 
 Home page
-![App Screenshot](<https://raw.githubusercontent.com/AbeethaHeshan/blog-site/main/src/assets/images/readmeAssets/Screenshot%20(172).png?token=GHSAT0AAAAAACLH26ZDQH3DPDUP53OZIQBYZOPEHLQ>)
+![App Screenshot](<https://raw.githubusercontent.com/AbeethaHeshan/blog-site/main/src/assets/images/readmeAssets/Screenshot%20(172).png>)
 
 Blog Page
-![App Screenshot](<https://raw.githubusercontent.com/AbeethaHeshan/blog-site/main/src/assets/images/readmeAssets/Screenshot%20(169).png?token=GHSAT0AAAAAACLH26ZDAFXGGWBNUZMI44U6ZOPEGWQ>)
+![App Screenshot](<https://raw.githubusercontent.com/AbeethaHeshan/blog-site/main/src/assets/images/readmeAssets/Screenshot%20(169).png>)
 
-![App Screenshot](<https://raw.githubusercontent.com/AbeethaHeshan/blog-site/main/src/assets/images/readmeAssets/Screenshot%20(168).png?token=GHSAT0AAAAAACLH26ZDA466QRZ4BIGMSAPYZOPEEZA>)
+![App Screenshot](<https://raw.githubusercontent.com/AbeethaHeshan/blog-site/main/src/assets/images/readmeAssets/Screenshot%20(168).png>)
 
-![App Screenshot](<https://raw.githubusercontent.com/AbeethaHeshan/blog-site/main/src/assets/images/readmeAssets/Screenshot%20(169).png?token=GHSAT0AAAAAACLH26ZCGEDUOVY2VKA2IN24ZOPEFYQ>)
-
+![App Screenshot](<https://raw.githubusercontent.com/AbeethaHeshan/blog-site/main/src/assets/images/readmeAssets/Screenshot%20(170).png>)
 
 ![App Screenshot](<https://raw.githubusercontent.com/AbeethaHeshan/blog-site/main/src/assets/images/readmeAssets/Screenshot%20(171).png>)
 
-
 Contact-page
 ![App Screenshot](<https://raw.githubusercontent.com/AbeethaHeshan/blog-site/main/src/assets/images/readmeAssets/Screenshot%20(173).png?token=GHSAT0AAAAAACLH26ZCNA5TJZFADNB3ARQAZOPEGJA>)
-
-//https://raw.githubusercontent.com/AbeethaHeshan/blog-site/main/src/assets/images/readmeAssets/Screenshot%20(171).png
