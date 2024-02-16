@@ -3,11 +3,11 @@ import { Col, Card, Button } from 'react-bootstrap';
 import { FaEye, FaEdit, FaTrash } from 'react-icons/fa';
 import LargeModal from '../Modal/LargeModal';
 import UpdateBlogForm from '../form/UpdateBlogForm';
-import { useDispatch, useSelector } from 'react-redux';
-import { addNewBlog, updateBlog, removeBlog } from '../../state/slices/blogSlice';
+import { useDispatch} from 'react-redux';
+import { removeBlog } from '../../state/slices/blogSlice';
 
 
-export default function BlogPostCard({data,index}) {
+export default function BlogPostCard({data,index,onView}) {
     const dispatch = useDispatch();
 
     const[show,setModel] = useState(false);
@@ -15,7 +15,6 @@ export default function BlogPostCard({data,index}) {
    const onDeleteBlogPost = () => {
       const blogId = data?.id;
       dispatch(removeBlog(blogId))
-      console.log(blogId);
    }
 
 
@@ -37,10 +36,10 @@ export default function BlogPostCard({data,index}) {
             </div>
             </Card.Text>
             <div style={{ position: 'relative' }}>
-            <Button variant="secondary" style={{ position: 'absolute', bottom: '0', left: '0', zIndex: '1' }} onClick={()=>{}}>
+            <Button variant="secondary" style={{ position: 'absolute', bottom: '0', left: '0', zIndex: '1' }} onClick={onView}>
                 <FaEye />
             </Button>
-            <Button variant="primary" style={{ position: 'absolute', bottom: '0', right: '0', zIndex: '1' }} onClick={()=>{setModel(true);console.log(data?.id);}}>
+            <Button variant="primary" style={{ position: 'absolute', bottom: '0', right: '0', zIndex: '1' }} onClick={()=>{setModel(true)}}>
                 <FaEdit />
             </Button>
             </div>

@@ -11,8 +11,6 @@ export default function UpdateBlogForm({blogDetails}) {
     const dispatch = useDispatch();
 
     const addNewBlogPost = () => {
-       // const blogPostId = generateRandomId();
-       // const blogDetails = {...data,id:blogPostId};
        dispatch(updateBlog(data));
        setData(null);
     };
@@ -54,31 +52,16 @@ export default function UpdateBlogForm({blogDetails}) {
             <Form.Control as="textarea" rows={3}  name="content" value={data?.content !== undefined ? data?.content : blogDetails?.content}   onChange={(e)=>handleChange(e)}/>
         </Form.Group>
         <Form.Group className="mb-3" >
-            <Form.Label>Auther</Form.Label>
+            <Form.Label>Author</Form.Label>
             <Form.Control type="text"   name="author" value={data?.author !== undefined ? data?.author : blogDetails?.author}   onChange={(e)=>handleChange(e)}/>
         </Form.Group>
         <Form.Group className="mb-3" >
-            <Form.Label>Example textarea</Form.Label>
+            <Form.Label>Created Date</Form.Label>
             <Form.Control type="date" name="date" value={data?.date !== undefined ? data?.date : blogDetails?.date}  onChange={(e)=>handleChange(e)}/>
         </Form.Group>
         <Form.Group controlId="formFileMultiple" className="mb-3">
-            <Form.Label>Multiple files input example</Form.Label>
+            <Form.Label>Blog Post Banner</Form.Label>
             <Form.Control type="file" multiple name='image' onChange={(e)=>handleChange(e)} />
-        </Form.Group>
-        <Form.Group controlId="formFileMultiple" className="mb-3">
-            <Form.Label>Blog Catogary</Form.Label>
-            <Dropdown>
-                <Dropdown.Toggle variant="success" id="dropdown-basic">
-                select catagory
-                </Dropdown.Toggle>
-
-                <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Sport</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Foods</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Health</Dropdown.Item>
-                </Dropdown.Menu>
-
-            </Dropdown>
         </Form.Group>
         <Button onClick={()=>{addNewBlogPost()}}>Update</Button>
    </Form>

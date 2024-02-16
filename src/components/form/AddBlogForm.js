@@ -50,43 +50,29 @@ export default function AddBlogForm() {
     <Form>
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
             <Form.Label>Title</Form.Label>
-            <Form.Control name="title" type="text" placeholder="name@example.com" onChange={(e)=>handleChange(e)} />
+            <Form.Control name="title" type="text" placeholder="name@example.com"  onChange={(e)=>handleChange(e)} required/>
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
             <Form.Label>Content</Form.Label>
-            <Form.Control as="textarea" rows={3}  name="content" onChange={(e)=>handleChange(e)}/>
+            <Form.Control as="textarea" rows={3}  name="content" onChange={(e)=>handleChange(e)} required/>
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-            <Form.Label>Auther</Form.Label>
-            <Form.Control type="text"   name="author" onChange={(e)=>handleChange(e)}/>
+            <Form.Label>Author</Form.Label>
+            <Form.Control type="text"   name="author" onChange={(e)=>handleChange(e)} required/>
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-            <Form.Label>Example textarea</Form.Label>
-            <Form.Control type="date" name="date" onChange={(e)=>handleChange(e)}/>
+            <Form.Label>Created Date</Form.Label>
+            <Form.Control type="date" name="date" onChange={(e)=>handleChange(e)} required/>
         </Form.Group>
 
         <Form.Group controlId="formFileMultiple" className="mb-3">
-            <Form.Label>Multiple files input example</Form.Label>
+            <Form.Label>Blog Post Banner</Form.Label>
             <Form.Control type="file" multiple name='image' onChange={(e)=>handleChange(e)} />
         </Form.Group>
 
-        <Form.Group controlId="formFileMultiple" className="mb-3">
-            <Form.Label>Blog Catogary</Form.Label>
-            <Dropdown>
-                <Dropdown.Toggle variant="success" id="dropdown-basic">
-                select catagory
-                </Dropdown.Toggle>
-
-                <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">Sport</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Foods</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Health</Dropdown.Item>
-                </Dropdown.Menu>
-            </Dropdown>
-        </Form.Group>
         <Button onClick={()=>{addNewBlogPost()}}>Save</Button>
    </Form>
   )
